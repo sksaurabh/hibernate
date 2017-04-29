@@ -1,0 +1,9 @@
+package com.om.saurabh.hib.dto;
+
+public class BeerDTO {
+	private int B_id;
+	   private String type;
+	   private int quality;
+	   private int price;
+	   private Collection<BeerDTO> beerDTOs;
+}

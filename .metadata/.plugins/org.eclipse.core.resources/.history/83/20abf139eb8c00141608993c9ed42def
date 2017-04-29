@@ -1,0 +1,8 @@
+package com.om.saurabh.hib.dto;
+
+public class Car {
+	private boolean music_sys;
+	private int NoOfDoor;
+	private String model;
+
+}

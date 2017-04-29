@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.om.saurabh.hib.dto">
+
+	<class name="ComputerDTO" table="COMPUTER_TABLE">
+		<id name="id" column="ID">
+			<generator class="increment" />
+		</id>
+		<property name="HarddiskSize" column="HarddiskSize" />
+		<property name="NoOfProcessl" column="NoOfProcess" />
+		<one-to-one name="CpuDTO" class="CpuDTO" cascade="all" />
+	</class>
+</hibernate-mapping>

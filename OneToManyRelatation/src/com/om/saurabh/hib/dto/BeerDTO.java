@@ -1,0 +1,52 @@
+package com.om.saurabh.hib.dto;
+
+import java.util.Collection;
+
+public class BeerDTO {
+	private int B_id;
+	private String type;
+	private int quality;
+	private int price;
+	private KingfisherDTO KingfisherDTOs;
+
+	public int getB_id() {
+		return B_id;
+	}
+
+	public void setB_id(int b_id) {
+		B_id = b_id;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public int getQuality() {
+		return quality;
+	}
+
+	public void setQuality(int quality) {
+		this.quality = quality;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public KingfisherDTO getKingfisherDTOs() {
+		return KingfisherDTOs;
+	}
+
+	public void setKingfisherDTOs(KingfisherDTO kingfisherDTOs) {
+		KingfisherDTOs = kingfisherDTOs;
+	}
+
+}

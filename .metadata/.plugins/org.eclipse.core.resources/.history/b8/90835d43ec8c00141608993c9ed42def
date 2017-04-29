@@ -1,0 +1,8 @@
+package com.om.saurabh.hib.dto;
+
+public class Vehicle {
+	private int id;
+	private String name;
+	private String type;
+	private String color;
+}

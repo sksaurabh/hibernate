@@ -1,0 +1,42 @@
+package com.om.saurabh.hib.dao;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.om.saurabh.hib.dto.ComputerDTO;
+import com.om.saurabh.hib.dto.CpuDTO;
+
+public class ComputerDAO {
+   public static void main(String[] args)
+   {
+	   ComputerDTO c1=new ComputerDTO();
+	   c1.setHarddiskSize(500);
+	   c1.setNoOfProcess(2);
+	   
+	   CpuDTO c2=new CpuDTO();
+	   c2.setFrequency(44.2);
+	   c2.setNoOfFan(2);
+	   Configuration configuration=new Configuration();
+	   configuration.configure();
+	   configuration.addResource("ComputerDTO.hbm.xml");
+	   configuration.addResource("CpuDTO.hbm.xml");
+	   SessionFactory factory=configuration.buildSessionFactory();
+	   Session session=factory.openSession();
+	   Transaction transaction=session.beginTransaction();
+	   try{
+		   transaction.begin();
+		   session.save(c1);
+		   transaction.commit();
+	   }
+	   catch(HibernateException e){
+		   System.err.println(e.getMessage());
+		   
+	   }
+	   finally{
+		   session.close();
+	   }
+   }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;hibernateVichle/src/vichle.cfg.xml&apos; to &apos;hibernate.cfg.xml&apos;" description="Rename resource &apos;vichle.cfg.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/vichle.cfg.xml" name="hibernate.cfg.xml" stamp="1419335046505" updateReferences="true"/>
+</session>

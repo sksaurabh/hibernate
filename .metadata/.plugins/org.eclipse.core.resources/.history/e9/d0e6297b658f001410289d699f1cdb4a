@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.om.saurabh.hib.dto.CpuDTO" table="CPU_TABLE">
+		<id name="Cid" column="Cid">
+			<generator class="foreign" >
+			<param name="Property">ComputerDTO</param>
+			</generator>
+		</id>
+		<property name="NoOfFan" column="NoOfFan" />
+		<property name="frequency" column="frequency" />
+		<one-to-one name="computerDTO" class="ComputerDTO" cascade="all" />
+	</class>
+</hibernate-mapping>

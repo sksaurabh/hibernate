@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.om.saurabh.hib.dto.CpuDTO" table="CPU_TABLE">
+		<id name="Cid" column="CID">
+			<generator class="increment" />
+		</id>
+		<property name="NoOfFan" column="NoOfFan" />
+		<property name="frequency" column="frequency" />
+	</class>
+</hibernate-mapping>

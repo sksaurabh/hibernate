@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+<class name="com.om.saurabh.hib.dto.Car" table="car_new">
+	
+	<id name="id" column="ID">
+		<generator class="increment" />
+	</id>
+	<property name="music_Sys" column="music_SYS" />
+	<property name="NoOfDoor" column="NoOfDoor" />
+	<property name="model" column="model" />
+	<property name="color" column="color"/>
+	<property name="name" column="name"/>
+	<property name="type" column="type"/>
+	
+</class>
+</hibernate-mapping>

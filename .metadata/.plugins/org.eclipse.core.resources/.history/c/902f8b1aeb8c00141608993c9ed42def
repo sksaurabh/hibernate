@@ -1,0 +1,6 @@
+package com.om.saurabh.hib.dto;
+
+public class Bike {
+	private boolean kick;
+    private int cc;
+}

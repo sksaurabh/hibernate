@@ -1,0 +1,5 @@
+package com.om.saurabh.hib.dto;
+
+public class BeerDTO {
+
+}

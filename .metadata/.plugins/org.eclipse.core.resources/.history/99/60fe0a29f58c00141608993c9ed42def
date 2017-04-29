@@ -1,0 +1,51 @@
+package com.om.saurabh.hib.dao;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.om.saurabh.hib.dto.Bike;
+import com.om.saurabh.hib.dto.Car;
+
+public class VehicleDAO {
+	public static void main(String[] args) {
+		/*Car c1 = new Car();
+		c1.setColor("red");
+		c1.setModel("D");
+		c1.setMusic_sys(true);
+		c1.setName("suzuki");
+		c1.setNoOfDoor(2);
+		c1.setType("desiel"); */
+
+		Bike b1 = new Bike();
+		b1.setCc(145);
+		b1.setColor("cyan");
+		b1.setKick(true);
+		b1.setType("petrol");
+
+		Configuration configuration = new Configuration();
+		configuration.configure();
+		configuration.addResource("car.hbm.xml");
+		configuration.addResource("bike.hbm.xml");
+
+		SessionFactory factory = configuration.buildSessionFactory();
+		Session session = factory.openSession();
+		Transaction transaction = session.beginTransaction();
+		try {
+			transaction.begin();
+			session.save(b1);
+			transaction.commit();
+		} catch (HibernateException e) {
+			System.err.println(e.getMessage());
+			transaction.rollback();
+
+		}
+
+		finally {
+			session.close();
+		}
+
+	}
+}

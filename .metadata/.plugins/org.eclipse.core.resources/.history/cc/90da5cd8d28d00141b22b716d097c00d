@@ -1,0 +1,7 @@
+package com.om.saurabh.hib.dto;
+
+public class CpuDTO {
+   private int Cid;
+   private  int NoOfFan;
+   private double frequency;
+}

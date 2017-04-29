@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hib.relations.dto">
+	<class name="KingfisherDTO" table="king_table">
+		<id name="id" column="Id" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="name" />
+		<property name="location" />
+		<property name="owner" type="string"/>
+		<set name="beerDTOs" cascade="all" table="beer_table" lazy="false">
+			<key column="k_id" />
+			<one-to-many class="BeerDTO" />
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,5 @@
+package com.om.saurabh.hib.dao;
+
+public class VehicleDAO {
+
+}

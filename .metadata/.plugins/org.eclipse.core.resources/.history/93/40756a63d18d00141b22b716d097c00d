@@ -1,0 +1,10 @@
+package com.om.saurabh.hib.dto;
+
+public class ComputerDTO {
+  
+	private int id;
+	private  int HarddiskSize;
+	private int NoOfProcess;
+	
+	
+}

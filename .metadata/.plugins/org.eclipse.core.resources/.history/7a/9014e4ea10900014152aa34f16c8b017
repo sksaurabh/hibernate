@@ -1,0 +1,9 @@
+package com.om.saurabh.hib.dto;
+
+public class Kingfisher {
+  private int id;
+  private String name;
+  private String location;
+  private String Oner;
+  
+}

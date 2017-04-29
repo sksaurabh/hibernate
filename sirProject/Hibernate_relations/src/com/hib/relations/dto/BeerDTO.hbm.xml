@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hib.relations.dto">
+	<class name="BeerDTO" table="beer_table">
+		<id name="beerId" column="b_Id">
+			<generator class="increment" />
+		</id>
+		<property name="type" />
+		<property name="quantity" />
+		<property name="price" />
+		<!-- ref in class -->
+		<many-to-one name="kingfisherDTO" class="KingfisherDTO"
+			cascade="all" column="k_id" />
+	</class>
+</hibernate-mapping>

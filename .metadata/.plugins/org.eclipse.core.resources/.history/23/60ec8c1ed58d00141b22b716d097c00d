@@ -1,0 +1,8 @@
+package com.om.saurabh.hib.dao;
+
+public class ComputerDAO {
+   public static void main(String[] args)
+   {
+	   ComputerDTO c1=new ComputerDTO();
+   }
+}

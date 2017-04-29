@@ -1,0 +1,49 @@
+package com.om.saurabh.hib.dao;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.om.saurabh.hib.dto.PersonDTO;
+
+public class PersonDAO {
+
+	public static void main(String[] args) {
+
+		PersonDTO dto = new PersonDTO();
+		dto.setName("saurabh");
+		dto.setEmail("sk@gmail.");
+		dto.setAge(24);
+		dto.setAddress("#139 9th F main  btm bangalore");
+
+		Configuration configuration = new Configuration();
+		configuration.configure();
+		configuration.addResource("PersonDTO.xml");
+
+		SessionFactory factory = configuration.buildSessionFactory();
+		Session session = factory.openSession();
+		Transaction transaction = session.beginTransaction();
+		transaction.begin();
+		/*Query hql=session.createQuery("From PersonDTO where P_Email= 'sk@gmail.'");
+		List <PersonDTO> PersonDTOs=hql.list();
+		if(PersonDTOs!=null)
+			System.out.println("result found\t"+PersonDTOs.size());
+		for(PersonDTO PersonDTO:PersonDTOs){
+			System.out.println(PersonDTO.getId());
+			System.out.println(PersonDTO.getEmail());
+		}*/
+		Query hql=session.createQuery("From name From PersonDTO where P_Email= 'sk@gmail.'");
+		List <String> list=hql.list();
+		for(String name:list)
+		{
+			System.out.println(name);
+		}
+		transaction.commit();
+		session.close();
+
+	}
+}

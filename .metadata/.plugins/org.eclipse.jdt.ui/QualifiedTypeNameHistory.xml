@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.security.auth.login.Configuration"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="com.om.saurabh.hib.dto.PersonDTO"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="com.om.saurabh.dto.CarDTO"/>
+<fullyQualifiedTypeName name="com.om.saurabh.dao.VichleDAO"/>
+<fullyQualifiedTypeName name="com.om.saurabh.dto.BikeDTO"/>
+<fullyQualifiedTypeName name="baba.arun.omkar.hib.DTO.MovieDTO"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.Void"/>
+<fullyQualifiedTypeName name="com.om.saurabh.hib.dto.Car"/>
+<fullyQualifiedTypeName name="com.om.saurabh.hib.dto.Bike"/>
+<fullyQualifiedTypeName name="javax.transaction.Transaction"/>
+<fullyQualifiedTypeName name="org.hibernate.Query"/>
+<fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.om.saurabh.hib.dao.ComputerDAO"/>
+<fullyQualifiedTypeName name="com.om.saurabh.hib.dto.ComputerDTO"/>
+<fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+<fullyQualifiedTypeName name="org.hibernate.Session"/>
+<fullyQualifiedTypeName name="org.hibernate.HibernateException"/>
+<fullyQualifiedTypeName name="com.om.saurabh.hib.dto.CpuDTO"/>
+<fullyQualifiedTypeName name="org.hibernate.mapping.Collection"/>
+<fullyQualifiedTypeName name="com.om.saurabh.hib.dto.KingfisherDTO"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="com.om.saurabh.hib.dto.BeerDTO"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+</qualifiedTypeNameHistroy>
